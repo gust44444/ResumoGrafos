@@ -1,0 +1,36 @@
+Caminhos, conexidade e distância:
+
+-Um grafo é considerado conexo quando é possível sair de um vértice e chegar em qualquer outro vértice do grafo percorrendo as arestas até ele, esse ato é chamado de passeio (walk).
+
+-Um grafo desconexo consiste em dois ou mais subgrafos conexos, importante frizar que cada um desses subgrafos representados é chamado de componente do grafo.
+
+-Importante frizar que o número de arestas que foi percorrida no passeio é chamada de comprimento (ou seja o tamanho do passeio).
+
+-O conceito de passeio fechado é iniciar o passeio em um vértice, e terminar nele mesmo percorrendo outras areas do grafo até retornar a ele mesmo.
+
+-Uma trilha(ou trajeto) em um grafo consiste em um passeio sem que haja arestas repetidas durante o mesmo.
+
+-Um caminho significa ir até um determinado vértice de destino sem repetir vértices que já foram percorridos.
+
+-Um circuito consiste em uma trilha em que o vértice inicial e final são idênticos.
+
+trilha euleriana é quando é possível percorrer todo o grafo sem repetir as arestas que já foram percorridas (passar por elas apenas 1 vez).
+caso a trilha comece e termine no mesmo vértice, é chamado circuito euleriano. (caso o grafo possua um circuito euleriano, chamamos o grafo de grafo euleriano).
+
+-Grafos que tem circuitos eulerianos são grafos que tem todos os seus vértices pares, e também tem no máximo um componente não trivial, ou seja, existe apenas um grafo inteiramente conexo,
+ ele poderia ter 2 subgrafos que seriam componentes do grafo e um deles triviais, ou seja, só possuiria um vértice.
+
+ -Um passeio pelo grafo que passa exatamente uma vez em cada vértice de todo o grafo é chamado caminho hamiltoniano, caso o passeio percorra todo grafo e além disso o vértice inicial e final sejam iguais
+ o grafo é chamado grafo hamiltoniano e essa situação é chamada de ciclo hamiltoniano.
+
+-A distância entre dois vértice é o menor caminho de um vértice até outro em determinado grafo, se por acaso não existir nenhum caminho que interligue estes grafos, a distância entre os dois é infinita.
+
+-A excentricidade de um vértice é a maior distância que existe no grafo até a aquele vértice, vindo de qualquer outro vértice. (representação de exemplo: e(a) = 3 (o vértice que está mais distânte ao vértice a está a 3 arestas de distâncias do A))
+
+-A excentricidade minima ou o raio de um grafo, é dentre todas as excentricidades do grafo, o menor valor entre elas, (entre todos os valores de todos os vértices).
+
+-A excentricidade máxima ou o diâmetro de um grafo, é dentre todas as excentricidades do grafo, o maior valor entre elas, (entre todos os valores de todos os vértices).
+
+-IMPORTANTE DE MAIS: o vértice no qual denomina o raio do grafo, ou seja, que mostra sua excentricidade minima, é o vértice que está localizado no centro do grafo, no caso pode haver mais de um vértice com essa excentricidade
+esses vértices são chamdos de CONJUNTO DE PONTOS CENTRAIS DO GRAFO que formam o centro do grafo.
+

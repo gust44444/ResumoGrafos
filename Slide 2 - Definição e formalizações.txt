@@ -1,0 +1,62 @@
+Definição e formalizações:
+
+- Grafo G = (V, E), V = conjunto de vértices (conjunto de elementos finito e não vazio), E = conjunto de arestas (conjunto de subconjuntos de dois elementos V (vértices)).
+Ou seja, essa é a representação lógica de um grafo.
+
+-É importante ressaltar que um grafo simples não possuí laços nem multiplas arestas (conteúdo do ultimo resumo).
+
+-Um grafo completo é definido por Kn, um grafo simples com n vértices todos conectados entre si. (o conjunto contém exatamente uma aresta para cada par de vértices).
+
+-A quantidade de grafos possíveis com n vértices se da pela fórmula: 2^((n²-n)/2).
+
+-A anotação u~v diz que u é adjacente a v.
+
+-No slide mostra que d(v) = número de vértice adjacentes ao vértice v (grau (pense em d como degree ou seja graus)). (caso d(v) = 0 , representa que o vértice não tem adjacentes, ou seja é um vértice isolado).
+
+-Importante ressaltar que se o grau do vértice é ímpar ele é chamado de vértice ímpar, caso o grau seja par o vértice é chamado de vértice par.
+
+-Uma sequência de graus de um grafo significa escrever todos os vértices do grafo ordenando-os pelo grau de cada um deles em ordem crescente.
+
+-Um multigrafo é caracterizado por um grafo que contém pelo menos uma aresta com multipla aresta, ou seja, mais de uma aresta que conecta os mesmos vértices (um grafo com um laço também é considerado um multigrafo,
+ou seja, um grafo não simples).
+(IMPORTANTE: caso o vértice possua um laço e também uma aresta que liga o outro vértice dizemos que o mesmo é d(v) = 3 pois existe 3 pontos de conexão entre o vértice).
+
+-Seja G um grafo (OU SEJA QUALQUER GRAFO) a soma de todos os graus de todos os vértices dele é par, e também é resultante ao dobro de arestas do grafo.
+outra regra é que o número de vértices ímpares (grau ímpar) de um grafo é sempre par.
+
+-Grau máximo de um vértice no grafo é representado por: ▲(G).
+-Grau minimo de um vértice no grafo é representado por: &(G).
+
+-Relembrando que a ordem do grafo é o número de vértices contidos nele, ordem esta representada por |V|. o tamanho do grafo é representado por |E| que se da pela quantidade de arestas do grafo.
+(em alguns casos para representar |V| e |E| é utilizado as letras n e m respectivamente).
+
+-REFORÇANDO: a soma de todos os graus de todos vértices não pode ser ímpar.
+
+-Um grafo é k-regular(ou regular de grau k) se todo vértice do grafo tiver um grau k.(ou seja a mesma quantidade de graus em todos os vértices).
+
+Se um grafo é k-regular logo o mesmo pode ser expresso na seguinte expressão: 0 <= k <= (ordem do grafo) - 1. se não puder ser descrito desta forma, logo ele não é possível de existir.
+ENFATIZANDO: NÃO É POSSÍVEL HAVER UM GRAFO COM A QUANTIDADE DE VÉRTICES IMPARES SER ÍMPAR.
+
+-IMPORTANTE: um complemento de um grafo sempre terá a mesma quantidade de vértices do que o grafo original, retirando apenas as arestas! diferente de um subgrafo, que é um grafo a partir de uma parte de outro.
+As arestas contidas no grafo complementar OBRIGATÓRIAMENTE não pode estar contidas no grafo original.
+
+-Podemos concluir também que existe uma fórmula para descobrir o grau de um vértice em um grafo complementar, a fórmula é (ordem do grafo) - (quantidade de grau do vértice no grafo original) - 1, este resultado trará
+esse valor, com isso conclui-se que o complemento (!G) do grafo só poderá ser regular caso o grafo original também seja.
+
+-Subgrafo gerador: Imagine que x é  um conjunto de arestas que está contido em G, logo se retirarmos as arestas x de g, o resultado será um subgrafo de G. (subgrafo retirando arestas)
+Informalmente, um subgrafo é um grafo contido em outro grafo.
+Sejam os grafos G e H. Dizemos que H é um subgrafo de G desde que:
+V(H) c V(G) e E(H) c E(G). Assim, H c G.
+
+-Subgrafo induzido: S é um conjunto de vértices que está contido dentro de G, o subgrafo induzido por S seria o grafo G apenas com os vértices contidos no conjunto S. (subgrafo retirando vértices)
+
+Grafo isomórfico seria um grafo igual a outro representado de uma outra forma ou igual, chamamos os grafos de grafos isomórficos, ou seja, representam a mesma coisa.
+podem ser desenhados da forma que quiser, porém o grafo representa os mesmos conjuntos de arestas e de vértices(vértices com exatamente o mesmo número de graus em cada um).
+
+
+
+
+
+
+
+

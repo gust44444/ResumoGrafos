@@ -1,0 +1,56 @@
+Parte introdutória de grafos:
+
+-Mostra os grafos da vida real, aplicados em padrões que envolvem ligações entre vértices, que são chamados de arestas.
+
+-alguns exemplos são rodovias, apertos de mão e circuitos integrados que são constituidos por padrões de ligações entre vértices.
+
+-existem tipos de grafos que possuem arestas com um único sentido, são chamados grafos direcionados, quando a direção não é especificada, o grafo implicitamente é não direcionado, como uma mão de duas vias.
+
+-existem também os grafos que são fragmentados, que possuem arestas desconexas, são chamados grafos desconexos.
+
+-Alguns grafos podem conter multiplas arestas, arestas essas que podem estar ligadas em dois mesmos vértices que já são ligados (são uma aresta), e assim passam a ter mais tem uma ligação,
+constituindo um grafo com multipla aresta. ou até mesmo ligações de um vértice até ele mesmo, essa situações também pode ser chamada de laço. (Outros grafos podem conter múltiplas arestas entre os 
+mesmos pares de vértices,
+ou vértices que estão
+conectados a eles mesmos
+(laços).)
+
+-quando é criado um grafo do resultado da remoção de uma parte de um grafo existente, é chamado de subgrafo (representado por !G).
+
+-A ordem de um grafo é seu número de vértices, como por exemplo um grafo de ordem K5(QUANDO O MESMO É COMPLETO), ou seja o grafo possui 5 vértices.
+
+-já um grau de um vértice no grafo, se dá por quantas arestas estão ligadas a ele mesmo, como por exemplo um vértice com 5 arestas ligadas a ele é um vértice de grau 5.
+
+-Alguns grafos formam um unico anel de vértices, eles são chamados ciclos. (todos os ciclos tem a mesma quantidade de vértices e arestas).
+
+-fórmula para descobrir o número de arestas de um grafo completo: n x (n - 1)/2 (aonde n é o número de vértices).
+
+-é importante enfatizar que quando o grafo é completo em alguns momentos é utilizado Kn para se referir a ele, ou seja, K5 é um grafo de 5 vértices e completo.
+
+grafo bipartido:
+
+-Um grafo bipartido é um grafo que contém 2 conjuntos e todos do conjunto A estão conectados aos do conjunto B, mas não estão conectados entre si, é importante ressaltar que
+quando nos referimos a um grafo bipartido é utilizado Kx,y para nos referirmos ao grafo, sendo x o tamanho do conjunto A e B o tamanho do conjunto B.
+
+-apenas é possível percorrer o grafo todo sem repetir a aresta se o mesmo possui no máximo dois vértices de grau ímpar, que no caso seriam os vértices de inicio e do fim do grafo.
+
+-um grafo planar é aquele que pode ser desenhado sem que haja cruzamentos entre as arestas.
+A partir do grafo K5 todos os grafos completos maiores que ele são não planares, ou seja para conseguirmos desenha-los não é possível sem termos que realizar um cruzamento entre arestas, é importante ressaltar
+que como K5 não é planar, todos os grafos que possuem ele como subgrafos também são não planares (K5, K6, K7 e assim por diante).
+Grafos não planares devem conter como subgrafo um K3,3(completo e bipartido com conjuntos com 3 vértices cada), ou um subgrafo K5(completo com 5 vértices).
+
+-uma boa forma de descobrir a quantide de arestas de um grafo é diminuir o número de faces em 1 e somar com o número de vértices, fazendo isso descobrirá o número de arestas (faces - 1 + vértices).
+Esse resultado se chama equação de Euler.
+
+-Quando é transformado um políedro em um grafo planar, a fórmula para achar a quantidade de arestas é (faces + vértices - 2).
+
+-Ciclo Hamiltonianos são caminhos percorridos no grafo sem repetir vértices que já foram percorridos.
+
+-Quando se fala de ciclos Eulerianos, se falam e percorrer caminhos no grafo sem repetir a aresta.
+
+-Em um grafo completo de 4 cidades existe 4! de possibilidades de caminhos distintos entre as cidades, pois passando pelo primeiro caminho, na segunda cidade só teremos 3 possibilidades de caminhos, e assim por diante.
+ou seja: 4x3x2x1 de possibilidades de caminhos sem repetir.
+
+O problema do caixeiro(problema para percorrer uma série de cidades sem repetir o vértice) viajante é NP-completo, ou seja, muito difícil de
+ser resolvido por computadores (pelo menos para um número muito
+grande de cidades).
