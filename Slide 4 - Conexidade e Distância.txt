@@ -34,3 +34,6 @@ caso a trilha comece e termine no mesmo vértice, é chamado circuito euleriano.
 -IMPORTANTE DE MAIS: o vértice no qual denomina o raio do grafo, ou seja, que mostra sua excentricidade minima, é o vértice que está localizado no centro do grafo, no caso pode haver mais de um vértice com essa excentricidade
 esses vértices são chamdos de CONJUNTO DE PONTOS CENTRAIS DO GRAFO que formam o centro do grafo.
 
+
+um subgrafo induzido de um grafo completo é completo, pois retirando os vértices dele, retira-se as arestas ligadas a ele também, porém as outras arestas continuando deixando o grafo como induzido.
+
